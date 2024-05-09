@@ -1,0 +1,76 @@
+<div>
+  <div class="submit-form">
+    @if (!submitted) {
+    <div class="form-group">
+      <label for="placa">Placa</label>
+      <input
+        type="text"
+        class="form-control"
+        id="placa"
+        required
+        [(ngModel)]="veiculo.placa"
+        name="placa"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="marca">Marca</label>
+      <input
+        class="form-control"
+        id="marca"
+        required
+        [(ngModel)]="veiculo.marca"
+        name="marca"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="modelo">Modelo</label>
+      <input
+        class="form-control"
+        id="modelo"
+        required
+        [(ngModel)]="veiculo.modelo"
+        name="modelo"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="chassi">Chassi</label>
+      <input
+        class="form-control"
+        id="chassi"
+        required
+        [(ngModel)]="veiculo.chassi"
+        name="chassi"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="renavam">Renavam</label>
+      <input
+        class="form-control"
+        id="renavam"
+        [(ngModel)]="veiculo.renavam"
+        name="renavam"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="ano">Ano</label>
+      <input
+        class="form-control"
+        id="ano"
+        required
+        [(ngModel)]="veiculo.ano"
+        name="ano"
+      />
+    </div>
+
+    <button (click)="saveVeiculo()" class="btn btn-success">Submit</button>
+    } @else {
+    <h4>Veiculo was submitted successfully!</h4>
+    <button class="btn btn-success" (click)="newVeiculo()">Add</button>
+    }
+  </div>
+</div>

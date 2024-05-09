@@ -1,0 +1,89 @@
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Query"
+        [(ngModel)]="query"
+        (ngModelChange)="search()"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          (click)="search()"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <h4 style="margin-bottom: 20px">Veiculos List</h4>
+    <table class="list-group">
+      <tr
+        style="
+          display: flex;
+          justify-content: space-between;
+          padding-left: 15px;
+        "
+      >
+        <th>Placa</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Chassi</th>
+        <th>Renavam</th>
+        <th>Ano</th>
+        <th style="width: 35px"></th>
+      </tr>
+
+      @for (veiculo of veiculos; track veiculo.id; let i = $index) {
+      <tr
+        class="list-group-item"
+        [class.active]="i == currentIndex"
+        (click)="setActiveVeiculo(veiculo, i)"
+        style="
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          padding: 5px;
+          margin: 5px;
+          border-radius: 5px;
+          text-align: center;
+          width: 100%;
+        "
+      >
+        <td style="padding: 5px">
+          <span>{{ veiculo.placa }} </span>
+        </td>
+        <td style="padding: 5px">
+          <span>{{ veiculo.marca }}</span>
+        </td>
+        <td style="padding: 5px">
+          <span>{{ veiculo.modelo }}</span>
+        </td>
+        <td style="padding: 5px">
+          <span>{{ veiculo.chassi }}</span>
+        </td>
+        <td style="padding: 5px">
+          <span>{{ veiculo.renavam }}</span>
+        </td>
+        <td style="padding: 5px">
+          <span>{{ veiculo.ano }}</span>
+        </td>
+        <td style="padding: 5px">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            style="padding: 2px; background-color: salmon; color: black"
+            (click)="deleteVeiculo(veiculo.id)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      }
+    </table>
+  </div>
+</div>

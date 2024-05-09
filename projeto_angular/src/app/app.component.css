@@ -1,0 +1,10 @@
+.nav-link {
+  color: black !important;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #fcb900 !important;
+  color: black !important;
+  margin-top: 10px;
+}
