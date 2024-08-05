@@ -18,7 +18,7 @@ export class VeiculosService {
     } catch (e) {
       switch (e.code) {
         case 'SQLITE_CONSTRAINT': // Unique violation error code
-          let ErrorMessage = e.toString();
+          const ErrorMessage = e.toString();
 
           if (ErrorMessage.indexOf('placa') > -1) {
             throw new BadRequestException('Veículo com esta placa já existe.');
