@@ -1,3 +1,53 @@
+Test application, made with Angular and Nest JS, and also with a local database in SQLite.
+
+
+
+ANGULAR APPLICATION
+
+Run the yarn command before running the application
+
+Steps to run:
+
+- yarn start or run the bat file: run.bat
+
+- Click on the link available in the console to open it in the browser
+
+Steps to test:
+
+- yarn test or run the bat file: run_test.bat
+
+The test performs definition and CRUD checks for the controller and the service.
+
+API - NEST JS - SQLITE BANK
+
+It is a basic API made in NestJS for vehicle query.
+
+It uses NestJS and SQLite technology, along with the Typeorm library, to store and query information.
+
+Run the yarn command before running the application.
+
+Steps to run:
+
+- yarn start or run the bat file: run.bat
+
+Steps to test:
+
+- yarn test or run the bat file: run_test.bat
+
+The test performs definition and crud checks for the controller and the service.
+
+
+![image](https://github.com/user-attachments/assets/1e01b199-c881-49ce-b64e-72f072180495)
+
+
+
+
+
+PORTUGUESE
+
+
+
+
 Aplicação de teste, feita com Angular e Nest JS, e ainda com banco de dados local em SQLite.
 
 
@@ -39,4 +89,5 @@ Passos para testar:
 O teste faz verificações de definição e de cruds para o constroller e para o service.
 
 
-![image](https://github.com/user-attachments/assets/1e01b199-c881-49ce-b64e-72f072180495)
+
+
