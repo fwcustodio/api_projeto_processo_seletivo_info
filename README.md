@@ -2,23 +2,39 @@
 
 
 
-ANGULAR APPLICATION
+# ANGULAR APPLICATION
 
 Run the yarn command before running the application
 
 Steps to run:
 
-- yarn start or run the bat file: run.bat
+```
+yarn start
 
+```
+ or run the bat file
+
+```
+run.bat
+
+```
 - Click on the link available in the console to open it in the browser
 
-Steps to test:
+Passos para testar:
 
-- yarn test or run the bat file: run_test.bat
+```
+yarn test
+
+```
+ or run the bat file
+
+```
+run_test.bat
+```
 
 The test performs definition and CRUD checks for the controller and the service.
 
-API - NEST JS - SQLITE BANK
+# API - NEST JS - SQLITE BANK
 
 It is a basic API made in NestJS for vehicle query.
 
@@ -28,11 +44,28 @@ Run the yarn command before running the application.
 
 Steps to run:
 
-- yarn start or run the bat file: run.bat
+```
+yarn start
 
-Steps to test:
+```
+ or run the bat file
 
-- yarn test or run the bat file: run_test.bat
+```
+run.bat
+
+```
+
+Passos para testar:
+
+```
+yarn test
+
+```
+ or run the bat file
+
+```
+run_test.bat
+```
 
 The test performs definition and crud checks for the controller and the service.
 
@@ -43,16 +76,16 @@ The test performs definition and crud checks for the controller and the service.
 
 
 
-PORTUGUESE
+# PORTUGUESE
 
 
 
 
-Aplicação de teste, feita com Angular e Nest JS, e ainda com banco de dados local em SQLite.
+# Aplicação de teste, feita com Angular e Nest JS, e ainda com banco de dados local em SQLite.
 
 
 
-APLICAÇÃO ANGULAR
+# APLICAÇÃO ANGULAR
 
 Executar o comando yarn antes de rodar a aplicação
 
@@ -70,7 +103,7 @@ O teste faz verificações de definição e de cruds para o constroller e para o
 
 
 
-API - NEST JS - BANCO SQLITE
+# API - NEST JS - BANCO SQLITE
 
 É uma API basica feita em NestJS para consulta de veiculos.
 
@@ -80,11 +113,28 @@ Executar o comando yarn antes de rodar a aplicação
 
 Passos para rodar:
 
-- yarn start ou executar o arquivo bat: run.bat
+```
+yarn start
+
+```
+ou executar o arquivo bat
+
+```
+run.bat
+
+```
 
 Passos para testar:
 
-- yarn test ou executar o arquivo bat: run_test.bat
+```
+yarn test
+
+```
+ou executar o arquivo bat
+
+```
+run_test.bat
+```
 
 O teste faz verificações de definição e de cruds para o constroller e para o service.
 
